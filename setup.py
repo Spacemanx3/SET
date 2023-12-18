@@ -18,8 +18,8 @@ try:
 
 # if index is out of range then flag options
 except IndexError:
-	print "** SET Dependancy Installer v0.1 **"
-	print "\nTo install: setup.py install" 
+	print ("** SET Dependancy Installer v0.1 **")
+	print ("\nTo install: setup.py install") 
 
 # if user specified install then lets to the installation
 if installer == True:
@@ -32,6 +32,6 @@ if installer == True:
 
 	# if sources.list is not available then we're running something offset
 	else:
-		print "[*] Your not running a Debian variant. Installer not finished for this type of Linux distro."
-		print "[*] Install subversion, python-pexpect, python-beautifulsoup, python-crypto, python-openssl, python-pefile manually for all of SET dependancies."
+		print ("[*] Your not running a Debian variant. Installer not finished for this type of Linux distro.")
+		print ("[*] Install subversion, python-pexpect, python-beautifulsoup, python-crypto, python-openssl, python-pefile manually for all of SET dependancies.")
 		sys.exit()
